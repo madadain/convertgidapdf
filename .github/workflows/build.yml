@@ -32,7 +32,7 @@ jobs:
       - name: Build EXE (onefile, console)
         shell: cmd
         run: |
-          pyinstaller --onefile --name "convertgidapdf" convertgidapdf.py
+          pyinstaller --onefile --noconsole --name "convertgidapdf" convertgidapdf.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
